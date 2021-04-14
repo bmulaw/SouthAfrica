@@ -1,0 +1,8 @@
+{ 
+    "name": "South Africa", 
+    "description": "Infographic on apartheid.", 
+    "version": "1.0.0", 
+    "scripts": { 
+      "start": "script.js"   
+    } 
+  } 

@@ -17,7 +17,7 @@ html, body {
 }
 .subtitle {
   text-align: center;
-  padding: 13px;
+  padding: 15px;
 }
 .subtitle .description {
   font-size: 12px;
@@ -30,7 +30,7 @@ html, body {
 h1 {
   font-family: sans-serif;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 .title {
@@ -429,9 +429,6 @@ p:last-child {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-}
-.repression .vertical-bars .bar {
-
 }
 .vertical-bars .bar.white-men {
   background-color: white;

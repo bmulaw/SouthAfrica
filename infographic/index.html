@@ -24,39 +24,33 @@
   <div id="prisoners" class="person prisoners">
     <div class="spacer"></div>
     <div class="padder"></div>
-    <div id="title" class="title"><h1>The actual number of Americans jailed or imprisoned, about 2.3 million</h1><span id="counter" class="counter"></span></div>
+    <div id="title" class="title"><h1>Number of Black South Africans imprisoned during apartheid just in 1993 alone<sup>[<a class="citation" href="http://people.umass.edu/~kastor/ceml_articles/continuing.html" target="_blank"></a>]</sup></h1><span id="counter" class="counter"></span></div>
     <div data-background="black" class="subtitle">
-        <p class="description">Each icon represents one incarcerated person <br class="mobile-only"><a href="https://github.com/MKorostoff/incarceration-in-real-numbers/blob/master/README.md" target="_blank">(about this page)</a></p>
-        <p class="scroll-down">scroll down</p>
+      <p class="description">Over 270,000 Black South Africans were imprisoned under the racist institution of apartheid in 1993. Each icon represents one incarcerated person <br class="mobile-only"><a href="https://github.com/bmulaw/SouthAfrica/blob/counting/README.md" target="_blank">(about this page)</a></p>
+      <p class="scroll-down">scroll down</p>
     </div>
 
     <div class="infobox first">
-      <div class="infobox-inner">The United States holds more people in jails and prisons than any other country by far, both in absolute numbers and as a percentage of population.</div>
+      <div class="infobox-inner">The legacy of apartheid in South Africa has led to insurmountable inequalities among Black and White citizens of the country.</div>
     </div>
 
     <div id='per-one-hundred' class="infobox chart horizontal expandable">
       <div id='per-one-hundred-inner' class="infobox-inner">
-        <h2>Incarcerated per 100,000 residents <sup>[<a class="citation" href="https://github.com/MKorostoff/incarceration-in-real-numbers/blob/master/SOURCES.md#incarceration-rates" target="_blank"></a>]</sup></h2>
-        <div id="usa-rate" class="bar highlighted right"><span class="inset-text-mob inset-text-desk bar-inner">USA (698)</span></div>
-        <div style="width: 84.8%" class="bar"><span class="bar-inner inset-text-mob">El Salvador (590)</span></div>
-        <div style="width: 79.3%" class="bar"><span class="bar-inner inset-text-mob">Turkmenistan (552)</span></div>
-        <div style="width: 76.3%" class="bar"><span class="bar-inner inset-text-mob">Thailand (531)</span></div>
-        <div style="width: 73.4%" class="bar"><span class="bar-inner inset-text-mob">Rwanda (511)</span></div>
-        <div style="width: 73.3%" class="bar"><span class="bar-inner inset-text-mob">Cuba (510)</span></div>
-        <div style="width: 57.6%" class="bar"><span class="bar-inner inset-text-mob">Panama (401)</span></div>
-        <div style="width: 53.7%" class="bar"><span class="bar-inner inset-text-mob">Costa Rica (374)</span></div>
-        <div style="width: 52.4%" class="bar"><span class="bar-inner inset-text-mob">Cayman Islands (365)</span></div>
-        <div style="width: 52.2%" class="bar"><span class="bar-inner inset-text-mob">Russia (363)</span></div>
-        <div style="width: 51.1%" class="bar"><span class="bar-inner inset-text-mob">Belize (356)</span></div>
-        <div style="width: 50.0%" class="bar"><span class="bar-inner inset-text-mob">Brazil (348)</span></div>
-      <a class="expando" onclick="toggleExpand('per-one-hundred', 'per-one-hundred-inner')">Expand &#9660;</a>
+        <h2>South Africa has the highest level of wealth inequality among all nations <sup>[<a class="citation" href="https://www.usatoday.com/story/money/2019/05/28/countries-with-the-widest-gaps-between-rich-and-poor/39510157/" target="_blank"></a>]</sup></h2>
+        <h1>Gini Coeffient Per Counties</h1>
+        <div style="width: 95%" id="usa-rate" class="bar highlighted right"><span class="inset-text-mob inset-text-desk bar-inner">South Africa (0.62)</span></div>
+        <div style="width: 84%" class="bar"><span class="bar-inner inset-text-mob">China (0.51)</span></div>
+        <div style="width: 83%" class="bar"><span class="bar-inner inset-text-mob">India (0.50)</span></div>
+        <div style="width: 82%" class="bar"><span class="bar-inner inset-text-mob">Costa Rica (0.48)</span></div>
+        <div style="width: 81%" class="bar"><span class="bar-inner inset-text-mob">Brazil (0.47)</span></div>
+        <div style="width: 80%" class="bar"><span class="bar-inner inset-text-mob">Mexico (0.46)</span></div>
+        <div style="width: 79%" class="bar"><span class="bar-inner inset-text-mob">Chile (0.45)</span></div>
+        <div style="width: 74%" class="bar"><span class="bar-inner inset-text-mob">Turkey (0.40)</span></div>
+        <div style="width: 73%" class="bar"><span class="bar-inner inset-text-mob">United States (0.39)</span></div>
+        <div style="width: 72%" class="bar"><span class="bar-inner inset-text-mob">Russia (0.38)</span></div>
+        
       </div>
     </div>
-
-
-
-
-    
 
     <div id="casualties" class="infobox chart horizontal">
       <div class="infobox-inner">
@@ -125,11 +119,120 @@
       <div data-background="black" class="infobox-inner short">Knowing all of this forces us to ask an uncomfortable question.</div>
     </div>
 
+    <div id="curve-wrapper-outer" class="infobox infobox-near chart curve relative">
+      <div id="curve-wrapper" class="infobox-inner curve-section">
+        <h2>Number of incarcerated Americans over time <sup>[<a class="citation" target="_blank" href="https://github.com/MKorostoff/incarceration-in-real-numbers/blob/master/SOURCES.md#incarceration-and-crime-rates-overtime"></a>]</sup></h2>
+         <picture>
+          <source srcset="img/correlation_m.svg" media="(max-width: 799px)">
+          <source srcset="img/correlation_d.svg" media="(min-width: 800px)">
+          <img id="correlation" alt="Chart showing lack of correlation between crime rates and incarceration." src="img/correlation_d.svg">
+        </picture>
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="168 91 813 443" width="813" height="443">
+          <defs>
+            <font-face font-family="Helvetica Neue" font-size="18" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+              <font-face-src>
+                <font-face-name name="HelveticaNeue"/>
+              </font-face-src>
+            </font-face>
+          </defs>
+          <g id="Canvas_1" stroke="none" stroke-opacity="1" fill="none" stroke-dasharray="none" fill-opacity="1">
+            <title>Canvas 1</title>
+            <g id="Canvas_1_Layer_1">
+              <title>Layer 1</title>
+              <g id="Group_40">
+                <g id="Graphic_41"/>
+                <g id="Graphic_2">
+                  <path id="curve" d="M 214.62963 491.1832 L 214.62963 469.1928 L 234.12963 469.2093 L 247.12963 467.18367 L 253.62963 465.70015 L 260.12963 463.41135 L 266.62963 461.8123 L 273.12963 460.68335 L 279.62963 458.77823 L 286.12963 457.0856 L 292.62963 456.4672 L 299.12963 456.18447 L 305.62963 454.75295 L 312.12963 452.624 L 318.62963 451.29615 L 325.12963 448.8731 L 331.62963 446.4755 L 338.12963 442.1595 L 344.62963 441.94687 L 351.12963 443.376 L 357.62963 445.8912 L 364.12963 448.10383 L 370.62963 448.97247 L 377.12963 448.888 L 383.62963 447.9656 L 390.12963 446.27583 L 396.62963 445.63455 L 403.12963 444.49743 L 409.62963 444.224 L 416.12963 443.51375 L 422.62963 442.3243 L 429.12963 440.68783 L 435.62963 438.41535 L 442.12963 437.1736 L 448.62963 435.78703 L 455.12963 435.67007 L 461.62963 431.65247 L 468.12963 430.47743 L 474.62963 428.9208 L 481.12963 427.3675 L 487.62963 427.1768 L 494.12963 427.0224 L 500.6296 427.092 L 507.1296 427.2408 L 513.6296 428.63743 L 520.1296 428.8123 L 526.6296 429.34303 L 533.1296 427.4616 L 539.6296 426.80767 L 546.1296 425.55695 L 552.6296 424.8824 L 559.1296 423.13743 L 565.6296 420.41087 L 572.1296 416.80655 L 578.6296 412.71775 L 585.1296 408.56783 L 591.6296 406.784 L 598.1296 403.83535 L 604.6296 401.95663 L 611.1296 393.7 L 617.6296 381.48063 L 624.1296 375.19087 L 630.6296 369.30703 L 637.1296 359.6019 L 643.6296 349.87647 L 650.1296 340.02 L 656.6296 325.2616 L 663.1296 304.44495 L 669.6296 292.8275 L 676.1296 281.2579 L 682.6296 269.05167 L 689.1296 252.6459 L 695.6296 234.5971 L 702.1296 220.1299 L 708.6296 209.6232 L 715.1296 192.54831 L 721.6296 178.3496 L 728.1296 168.38047 L 734.6296 161.39455 L 741.1296 158.27503 L 747.6296 147.76463 L 754.1296 139.79231 L 760.6296 132.30655 L 767.1296 122.48143 L 773.6296 113.05055 L 780.1296 107.20895 L 786.6296 104.81967 L 793.1296 107.64063 L 799.6296 111.63279 L 806.1296 117.44383 L 812.6296 120.97679 L 819.1296 122.82559 L 825.6296 113.54479 L 825.6296 491.1832 Z" fill="yellow" />
+                </g>
+                <g id="Graphic_5">
+                  <rect x="818.3648" y="165.952" width="7.26483" height="1.6" fill="black"/>
+                </g>
+                <g id="Graphic_10">
+                  <text transform="translate(829.4182 318)" fill="black">
+                    <tspan font-family="Helvetica Neue" font-size="18" font-weight="400" fill="black" x="0" y="17">1 million</tspan>
+                  </text>
+                </g>
+                <g id="Graphic_11">
+                  <text transform="translate(830.0025 156.5)" fill="black">
+                    <tspan font-family="Helvetica Neue" font-size="18" font-weight="400" fill="black" x="0" y="17">2 million</tspan>
+                  </text>
+                </g>
+                <g id="Graphic_12">
+                  <rect x="818.3648" y="328.4" width="7.255107" height="1.6" fill="black"/>
+                </g>
+                <g id="nineteen-twenty">
+                  <text transform="translate(195.41363 495.9316)" fill="black">
+                    <tspan font-family="Helvetica Neue" font-size="18" font-weight="400" fill="black" x="0" y="17">1920</tspan>
+                  </text>
+                </g>
+                <g id="nineteen-eighty">
+                  <text transform="translate(585.1296 495.9316)" fill="black">
+                    <tspan font-family="Helvetica Neue" font-size="18" font-weight="400" fill="black" x="0" y="17">1980</tspan>
+                  </text>
+                </g>
+                <g id="twenty-ten">
+                  <text transform="translate(779.778 495.9316)" fill="black">
+                    <tspan font-family="Helvetica Neue" font-size="18" font-weight="400" fill="black" x="0" y="17">2010</tspan>
+                  </text>
+                </g>
+                <g id="nineteen-fifty">
+                  <text transform="translate(386.12963 495.9316)" fill="black">
+                    <tspan font-family="Helvetica Neue" font-size="18" font-weight="400" fill="black" x="0" y="17">1950</tspan>
+                  </text>
+                </g>
+                <g class="transition" id="nineteen-twenty-tick">
+                  <rect x="214.62963" y="480.6119" width="1.6000033" height="10.319675" fill="black"/>
+                </g>
+                <g id="nineteen-fifty-tick">
+                  <rect x="408.02963" y="480.6119" width="1.6000033" height="10.319675" fill="black"/>
+                </g>
+                <g class="transition" id="nineteen-eighty-tick">
+                  <rect x="603.0296" y="480.6119" width="1.6000033" height="10.319675" fill="black"/>
+                </g>
+                <g id="twenty-ten-tick">
+                  <rect x="798.994" y="480.7951" width="1.6000033" height="10.319675" fill="black"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="infobox infobox-quarter curve-section" id="until-recently">
+      <div class="infobox-inner">For almost all of American history, until as recently as 1980, prison populations grew steadily and proportionally to the population as a whole.</div>
+    </div>
+
+    <div class="infobox infobox-quarter curve-section" id="since-it-began">
+      <div class="infobox-inner">Since mass incarceration began, crime has risen and fallen with no correlation to incarceration rates.</div>
+    </div>
+
+    <div class="infobox infobox-quarter curve-section" id="reverse-correlation-1">
+      <div class="infobox-inner">
+        <p>In 1984, 1985, 1986, 1988, 1989, 1990, 1991, 2005, and 2006 we saw the violent crime rate and the incarceration rate increase simultaneously. In 2000, 2009, 2010, 2011, 2013, and 2014 we saw the violent crime rate and incarceration rate decrease simultaneously.</p>
+      </div>
+    </div>
+
+    <div class="infobox infobox-near curve-section" id="reverse-correlation-2">
+      <div class="infobox-inner">
+        <p>In 15 out of the 36 years shown in this chart, we observe the opposite effect that we would expect if incarceration was bringing down crime. To continue locking up this many people, we should require extremely strong evidence that it works. That evidence doesn't exist.</p>
+      </div>
+    </div>
+
+    <div class="infobox">
+      <div id="pretrial" data-background="black" class="infobox-inner short">Despite over 24 million Black South Africans living in apartheid in 1993, "the [Truth and Reconciliation Commission]
+        acknowledged around 22,000 victims of apartheid, a number subjected
+        to vigorous criticism." Reparation needs to be re-evaluated under genuine consideration.<sup>[<a class="citation" target="_blank" href="https://via.library.depaul.edu/cgi/viewcontent.cgi?article=1465&context=law-review"></a>]</sup></div>
+    </div>
+
+
     <div id="end-card" class="infobox infobox-yellow infobox-near">
       <div class="infobox-inner">
         <h2>A better world is possible.</h2>
       </div>
     </div>
+
+    
 
     <div class="infobox infobox-near-near" id="invest-in-prevention">
       <div class="infobox-inner">
@@ -165,7 +268,7 @@
 
     <div id="credits" class="infobox infobox-yellow">
       <div class="infobox-inner">
-        <em>Incarceration in real numbers is a project by <a href="https://mkorostoff.github.io/" target="_blank">Matt Korostoff</a>. Learn more <a href="https://github.com/MKorostoff/incarceration-in-real-numbers/blob/master/README.md" target="_blank">about this page</a>.</em>
+        <em>Incarceration in real numbers is a project by <a href="https://github.com/bmulaw" target="_blank">Bernard Mulaw</a>. Learn more <a href="https://github.com/bmulaw/SouthAfrica/blob/main/README.md" target="_blank">about this page</a>.</em>
       </div>
     </div>
     <div class="infobox infobox-near"></div>

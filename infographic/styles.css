@@ -57,7 +57,7 @@ h1 {
 }
 .prisoners {
   min-height: 200000px;
-  background-color: #007A4D;
+  background-color: #229e71;
 }
 .black .prisoners {
   background-image: url('img/bg/black.svg');
@@ -411,6 +411,7 @@ p:last-child {
 }
 .counter {
   font-family: monospace;
+  color: white;
   position: absolute;
   right: 20px;
   top: 10px;
@@ -596,7 +597,7 @@ p:last-child {
   height: 200px;
 }
 .eu-country:nth-child(odd) {
-  background-color: #68BC36;
+  background-color: #464b43;
 }
 .eu-country:nth-child(even) {
   background-color: #BFFFBF;

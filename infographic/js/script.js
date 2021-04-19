@@ -39,20 +39,20 @@ if (!mute) {
 
   var curveObserver = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
-      if (entry.isIntersecting || entry.intersectionRatio > 0) {
-        if (entry.target.id === 'since-it-began') {
-          since_it_began_shown = true;
-        }
-        if (entry.target.id === 'until-recently') {
-          until_recently_shown = true;
-        }
-        if (entry.target.id === 'none-of-this') {
-          since_it_began_shown = false;
-          until_recently_shown = false;
-          curve_wrapper_outer.classList.remove('stretched');
-          curve_wrapper_outer.classList.remove('show-correlation');
-        }
-      }
+      // if (entry.isIntersecting || entry.intersectionRatio > 0) {
+      //   if (entry.target.id === 'since-it-began') {
+      //     since_it_began_shown = true;
+      //   }
+      //   if (entry.target.id === 'until-recently') {
+      //     until_recently_shown = true;
+      //   }
+      //   if (entry.target.id === 'none-of-this') {
+      //     since_it_began_shown = false;
+      //     until_recently_shown = false;
+      //     curve_wrapper_outer.classList.remove('stretched');
+      //     curve_wrapper_outer.classList.remove('show-correlation');
+      //   }
+      // }
       //Item leaves the screen by scroll down
       if (entry.target.id === 'until-recently'
         && !entry.isIntersecting
@@ -115,7 +115,7 @@ if (!mute) {
 
 window.addEventListener('scroll', function(e) {
   scroll_count = getScrollCount();
-  if (scroll_count > 20) {
+  if (scroll_count > 2000) {
     counter.innerHTML = scroll_count.toLocaleString();
   }
   else {
@@ -127,25 +127,25 @@ function getScrollCount() {
   var body = document.documentElement || document.body;
   var total_height = prisoners.clientHeight;
   var scroll_percent = (body.scrollTop - prisoners.offsetTop + body.clientHeight) / total_height;
-  var count = Math.floor(scroll_percent * 20);
+  var count = Math.floor(scroll_percent * 2300000);
   return count;
 }
 
 function setHeight() {
   var browser_width = window.innerWidth || document.body.clientWidth;
-  var icons_per_card = 20;
-  var pixel_height_per_card = 50;
-  var pixel_width_per_card = 40;
+  var icons_per_card = 200;
+  var pixel_height_per_card = 500;
+  var pixel_width_per_card = 400;
 
   var cards_per_row = browser_width / pixel_width_per_card;
   var icons_per_row = icons_per_card * cards_per_row;
-  var number_of_rows = 20/icons_per_row;
+  var number_of_rows = 2300000/icons_per_row;
 
   var height = Math.floor(number_of_rows * pixel_height_per_card);
   prisoners.style.height = height + "px";
 
   if (!mute) {
-    var thousand_height = Math.floor((10/icons_per_row) * pixel_height_per_card);
+    var thousand_height = Math.floor((1000/icons_per_row) * pixel_height_per_card);
     thousand.style.height = thousand_height + "px";
   }
 }

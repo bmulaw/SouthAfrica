@@ -245,7 +245,7 @@ html.black-sparse  body {
   min-height: 70px;
 }
 .bar {
-  background-color: yellowgreen;
+  background-color: rgb(175, 206, 113);
   margin: 10px 0;
   padding: 10px;
   color: white;

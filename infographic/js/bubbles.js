@@ -250,7 +250,7 @@ function getRankRate(rate) {
   return rank || 1;
 }
 
-var usa_prisoners = 2300000;
+var usa_prisoners = 210000;
 var checks = document.querySelectorAll('.release');
 checks.forEach(function(check) {
   check.addEventListener('change', function(e){

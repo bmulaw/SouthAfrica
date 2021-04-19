@@ -127,7 +127,7 @@ function getScrollCount() {
   var body = document.documentElement || document.body;
   var total_height = prisoners.clientHeight;
   var scroll_percent = (body.scrollTop - prisoners.offsetTop + body.clientHeight) / total_height;
-  var count = Math.floor(scroll_percent * 2300000);
+  var count = Math.floor(scroll_percent * 210000);
   return count;
 }
 
@@ -139,7 +139,7 @@ function setHeight() {
 
   var cards_per_row = browser_width / pixel_width_per_card;
   var icons_per_row = icons_per_card * cards_per_row;
-  var number_of_rows = 2300000/icons_per_row;
+  var number_of_rows = 210000/icons_per_row;
 
   var height = Math.floor(number_of_rows * pixel_height_per_card);
   prisoners.style.height = height + "px";

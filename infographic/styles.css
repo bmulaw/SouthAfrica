@@ -411,11 +411,11 @@ p:last-child {
 }
 .counter {
   font-family: monospace;
-  color: white;
+  color: rgba(196, 21, 21, 0.959);
   position: absolute;
   right: 20px;
   top: 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
 }
 .stalin .vertical-bars .bar {
@@ -425,7 +425,7 @@ p:last-child {
   width: 25%;
 }
 .stalin .vertical-bars .stalin-bar {
-  background-color: #CD0000;
+  background-color: #cd000094;
   background-image: url(img/stalin.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -442,7 +442,7 @@ p:last-child {
   margin-top: 100px;
 }
 .infobox-near {
-  margin-top: 1000px;
+  margin-top: 100px;
 }
 .infobox-half {
   margin-top: 5000px;

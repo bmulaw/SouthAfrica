@@ -41,11 +41,4 @@ The terms "jail" and "prison" are not interchangeable. A jail is a place where a
 * [Table comparing preventative and punitive strategies](https://mkorostoff.github.io/incarceration-in-real-numbers/#table)
 * [Commentary on the importance of preventative measures](https://mkorostoff.github.io/incarceration-in-real-numbers/#essay)
 
-## Sources and Methodology
-
-See [SOURCES.md](https://github.com/MKorostoff/incarceration-in-real-numbers/blob/master/SOURCES.md)
-
-## Related works
-
-Incarceration in Real Numbers is part of my ongoing war on [scope insensitivity](https://www.lesswrong.com/posts/2ftJ38y9SRBCBsCzy/scope-insensitivity). If you enjoyed this project, you may also enjoy [Wealth Shown To Scale](https://mkorostoff.github.io/1-pixel-wealth/) and [Hundred Thousand Faces](https://mkorostoff.github.io/hundred-thousand-faces/).
 

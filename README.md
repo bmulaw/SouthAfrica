@@ -40,5 +40,3 @@ The terms "jail" and "prison" are not interchangeable. A jail is a place where a
 * [Impact of preventative strategies](https://mkorostoff.github.io/incarceration-in-real-numbers/#invest-in-prevention)
 * [Table comparing preventative and punitive strategies](https://mkorostoff.github.io/incarceration-in-real-numbers/#table)
 * [Commentary on the importance of preventative measures](https://mkorostoff.github.io/incarceration-in-real-numbers/#essay)
-
-

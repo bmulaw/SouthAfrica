@@ -133,146 +133,146 @@
 //   {name: "Norway", rate: 60, population: 3190},
 //   {name: "Finland", rate: 53, population: 2910}
 // ];
-var containerWidth = 1230;
-var containerHeight = 830;
-var diameterRatio = 5000;
-var leftRatio = 3000;
-var topRatio = 1.25;
+// var containerWidth = 1230;
+// var containerHeight = 830;
+// var diameterRatio = 5000;
+// var leftRatio = 3000;
+// var topRatio = 1.25;
 
-if (window.innerWidth < 451) {
-  containerWidth = window.innerWidth;
-  containerHeight = window.innerHeight * .9;
-  diameterRatio = 10000;
-  leftRatio = 13500;
-  topRatio = 1.5;
-}
+// if (window.innerWidth < 451) {
+//   containerWidth = window.innerWidth;
+//   containerHeight = window.innerHeight * .9;
+//   diameterRatio = 10000;
+//   leftRatio = 13500;
+//   topRatio = 1.5;
+// }
 
-var bubbles = document.getElementById('bubbles');
-var bubblesInner = document.getElementById('bubbles-inner');
-var bubbleHeader = document.getElementById('bubble-header');
+// var bubbles = document.getElementById('bubbles');
+// var bubblesInner = document.getElementById('bubbles-inner');
+// var bubbleHeader = document.getElementById('bubble-header');
 
-function scaleBubbles() {
-  var heightRatio = window.innerHeight/(containerHeight + 150);
-  var widthRatio = window.innerWidth/(containerWidth + 150);
-  var smallestRatio = (heightRatio > widthRatio) ? widthRatio : heightRatio;
+// function scaleBubbles() {
+//   var heightRatio = window.innerHeight/(containerHeight + 150);
+//   var widthRatio = window.innerWidth/(containerWidth + 150);
+//   var smallestRatio = (heightRatio > widthRatio) ? widthRatio : heightRatio;
 
-  if (window.innerHeight < containerHeight || window.innerWidth < containerWidth) {
-    bubbles.style.transform = 'scale(' + smallestRatio + ')';
-  }
-}
-scaleBubbles();
-window.addEventListener("orientationchange", scaleBubbles);
-window.addEventListener("resize", scaleBubbles);
-//todo: redraw bubbles when switching from desktop to mobile?
+//   if (window.innerHeight < containerHeight || window.innerWidth < containerWidth) {
+//     bubbles.style.transform = 'scale(' + smallestRatio + ')';
+//   }
+// }
+// scaleBubbles();
+// window.addEventListener("orientationchange", scaleBubbles);
+// window.addEventListener("resize", scaleBubbles);
+// //todo: redraw bubbles when switching from desktop to mobile?
 
-bubbles.style.display = "block";
-data.forEach(function(country, i){
+// bubbles.style.display = "block";
+// data.forEach(function(country, i){
 
-  var div = document.createElement("div");
+//   var div = document.createElement("div");
 
-  var innerDiv = document.createElement("div");
-  innerDiv.classList = "country-bubble-inner";
-  innerDiv.innerHTML = country.name;
-  div.appendChild(innerDiv);
+//   var innerDiv = document.createElement("div");
+//   innerDiv.classList = "country-bubble-inner";
+//   innerDiv.innerHTML = country.name;
+//   div.appendChild(innerDiv);
 
-  div.classList = 'country-bubble';
-  if (country.population < 250000) {
-    div.classList.add('country-bubble-small');
-  }
-  if (country.rate > 400) {
-    div.classList.add('country-bubble-high-rate');
-  }
-  if (country.name === "USA") {
-    div.id = "country-bubble-usa";
-    var innerUSA = div.querySelectorAll(".country-bubble-inner");
+//   div.classList = 'country-bubble';
+//   if (country.population < 250000) {
+//     div.classList.add('country-bubble-small');
+//   }
+//   if (country.rate > 400) {
+//     div.classList.add('country-bubble-high-rate');
+//   }
+//   if (country.name === "USA") {
+//     div.id = "country-bubble-usa";
+//     var innerUSA = div.querySelectorAll(".country-bubble-inner");
 
-    var usaRate = document.createElement("div");
-    usaRate.id = "usa-bubble-rate";
-    usaRate.innerHTML = "Rank per capita: 1";
-    innerUSA[0].appendChild(usaRate);
+//     var usaRate = document.createElement("div");
+//     usaRate.id = "usa-bubble-rate";
+//     usaRate.innerHTML = "Rank per capita: 1";
+//     innerUSA[0].appendChild(usaRate);
 
-    var usaCount = document.createElement("div");
-    usaCount.id = "usa-bubble-count";
-    usaCount.innerHTML = "Rank in absolute: 1";
-    innerUSA[0].appendChild(usaCount);
-  }
-  div.style.position = 'absolute';
+//     var usaCount = document.createElement("div");
+//     usaCount.id = "usa-bubble-count";
+//     usaCount.innerHTML = "Rank in absolute: 1";
+//     innerUSA[0].appendChild(usaCount);
+//   }
+//   div.style.position = 'absolute';
 
-  var diameter = Math.floor(country.population / diameterRatio);
-  div.style.left = Math.floor(country.population / leftRatio) + 'px';
-  div.style.top = containerHeight - (diameter/2) - Math.floor(country.rate / topRatio) + 'px';
-  div.style.width = diameter + 'px';
-  div.style.height = diameter + 'px';
-  div.style.zIndex = data.length - i;
+//   var diameter = Math.floor(country.population / diameterRatio);
+//   div.style.left = Math.floor(country.population / leftRatio) + 'px';
+//   div.style.top = containerHeight - (diameter/2) - Math.floor(country.rate / topRatio) + 'px';
+//   div.style.width = diameter + 'px';
+//   div.style.height = diameter + 'px';
+//   div.style.zIndex = data.length - i;
 
-  if (country.name == 'Japan') {
-    div.classList.add('japan');
-    div.style.zIndex = 1000;
-  }
+//   if (country.name == 'Japan') {
+//     div.classList.add('japan');
+//     div.style.zIndex = 1000;
+//   }
 
-  bubblesInner.appendChild(div);
-})
+//   bubblesInner.appendChild(div);
+// })
 
-function recalculateUSA(prisoners) {
-  var usa = document.getElementById("country-bubble-usa");
-  var rate = (prisoners/328000000) * 100000;
+// function recalculateUSA(prisoners) {
+//   var usa = document.getElementById("country-bubble-usa");
+//   var rate = (prisoners/328000000) * 100000;
 
-  var usaCount = document.getElementById("usa-bubble-count");
-  usaCount.innerHTML = "Rank in absolute: " + getRankPopulation(prisoners);
+//   var usaCount = document.getElementById("usa-bubble-count");
+//   usaCount.innerHTML = "Rank in absolute: " + getRankPopulation(prisoners);
 
-  var usaRate = document.getElementById("usa-bubble-rate");
-  usaRate.innerHTML = "Rank per capita: " + getRankRate(rate);
+//   var usaRate = document.getElementById("usa-bubble-rate");
+//   usaRate.innerHTML = "Rank per capita: " + getRankRate(rate);
 
-  var diameter = Math.floor(prisoners / diameterRatio);
-  usa.style.left = Math.floor(prisoners / leftRatio) + 'px';
-  usa.style.top = containerHeight - (diameter/2) - Math.floor(rate / topRatio) + 'px';
-  usa.style.width = diameter + 'px';
-  usa.style.height = diameter + 'px';
-}
+//   var diameter = Math.floor(prisoners / diameterRatio);
+//   usa.style.left = Math.floor(prisoners / leftRatio) + 'px';
+//   usa.style.top = containerHeight - (diameter/2) - Math.floor(rate / topRatio) + 'px';
+//   usa.style.width = diameter + 'px';
+//   usa.style.height = diameter + 'px';
+// }
 
-function getRankPopulation(population) {
-  var rank = 0;
-  data.forEach(function(country){
-    if (country.population > population) {
-      rank++;
-    }
-  });
-  return rank || 1;
-}
+// function getRankPopulation(population) {
+//   var rank = 0;
+//   data.forEach(function(country){
+//     if (country.population > population) {
+//       rank++;
+//     }
+//   });
+//   return rank || 1;
+// }
 
-function getRankRate(rate) {
-  var rank = 0;
-  data.forEach(function(country){
-    if (country.rate > rate) {
-      rank++;
-    }
-  });
-  return rank || 1;
-}
+// function getRankRate(rate) {
+//   var rank = 0;
+//   data.forEach(function(country){
+//     if (country.rate > rate) {
+//       rank++;
+//     }
+//   });
+//   return rank || 1;
+// }
 
-var usa_prisoners = 210000;
-var checks = document.querySelectorAll('.release');
-checks.forEach(function(check) {
-  check.addEventListener('change', function(e){
-    var change = parseInt(e.target.value);
+// var usa_prisoners = 74000;
+// var checks = document.querySelectorAll('.release');
+// checks.forEach(function(check) {
+//   check.addEventListener('change', function(e){
+//     var change = parseInt(e.target.value);
 
-    if (e.target.checked) {
-      usa_prisoners -= change;
-    }
-    else {
-      usa_prisoners += change;
-    }
-    recalculateUSA(usa_prisoners);
-  });
-})
+//     if (e.target.checked) {
+//       usa_prisoners -= change;
+//     }
+//     else {
+//       usa_prisoners += change;
+//     }
+//     recalculateUSA(usa_prisoners);
+//   });
+// })
 
-var radios = document.querySelectorAll('.release-radio');
-radios.forEach(function(radio){
-  radio.addEventListener('change', function(e){
-    var change = parseInt(e.target.value);
-    var sibiling = document.getElementById(e.target.dataset.sibiling);
-    sibiling.checked = false;
-    usa_prisoners -= change;
-    recalculateUSA(usa_prisoners);
-  })
-})
+// var radios = document.querySelectorAll('.release-radio');
+// radios.forEach(function(radio){
+//   radio.addEventListener('change', function(e){
+//     var change = parseInt(e.target.value);
+//     var sibiling = document.getElementById(e.target.dataset.sibiling);
+//     sibiling.checked = false;
+//     usa_prisoners -= change;
+//     recalculateUSA(usa_prisoners);
+//   })
+// })

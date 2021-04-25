@@ -8,7 +8,7 @@ html, body {
 }
 .padder {
   height: 20px;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .padder,
 .subtitle,
@@ -62,21 +62,16 @@ h1 {
 .black .prisoners {
   background-image: url('img/bg/black.svg');
 }
-.blue .prisoners {
-  background-image: url('img/bg/blue.svg');
-}
-.red .prisoners {
-  background-image: url('img/bg/red.svg');
-}
-.black-sparse .prisoners {
+
+/* .black-sparse .prisoners {
   background-image: url('img/bg/black-sparse.svg');
   background-size: 1000px;
-}
-.not-free .prisoners {
+} */
+/* .not-free .prisoners {
   background-image: url('img/bg/grey.svg');
   background-size: 1000px;
   background-color: black;
-}
+} */
 html.black,
 html.blue,
 html.red,
@@ -87,9 +82,9 @@ html.red body
 html.black-sparse  body {
   background-color: #fff0dd;
 }
-#prisoners {
+/* #prisoners {
   transition: background-color 1200ms, opacity 500ms;
-}
+} */
 .not-free .title {
   opacity: 0;
 }
@@ -107,7 +102,7 @@ html.black-sparse  body {
   z-index: 10000;
 }
 .infobox.first {
-  margin-top: 20000px;
+  margin-top: 5000px;
 }
 .infobox {
   margin: auto;
@@ -736,7 +731,7 @@ p:last-child {
   height: 2500px;
 }
 #curve-wrapper-outer {
-  height: 27500px;
+  height: 28000px;
   margin-bottom: -27500px;
 }
 .relative {
@@ -989,13 +984,15 @@ blockquote strong {
   font-size: 20px;
 }
 #end-card {
-  height: 20000px;
+  margin-top: 1500px;
+  margin-bottom: 1500px;
+  height: 2000px;
 }
 #end-card .infobox-inner {
   max-width: 100%;
 }
 #end-card h2 {
-  font-size: 70px;
+  font-size: 40px;
   margin-bottom: 0;
 }
 @media (min-width: 451px) {

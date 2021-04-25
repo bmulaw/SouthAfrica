@@ -127,25 +127,25 @@ function getScrollCount() {
   var body = document.documentElement || document.body;
   var total_height = prisoners.clientHeight;
   var scroll_percent = (body.scrollTop - prisoners.offsetTop + body.clientHeight) / total_height;
-  var count = Math.floor(scroll_percent * 210000);
+  var count = Math.floor(scroll_percent * 74001);
   return count;
 }
 
 function setHeight() {
   var browser_width = window.innerWidth || document.body.clientWidth;
-  var icons_per_card = 200;
-  var pixel_height_per_card = 500;
-  var pixel_width_per_card = 400;
+  var icons_per_card = 20;
+  var pixel_height_per_card = 50;
+  var pixel_width_per_card = 40;
 
   var cards_per_row = browser_width / pixel_width_per_card;
   var icons_per_row = icons_per_card * cards_per_row;
-  var number_of_rows = 210000/icons_per_row;
+  var number_of_rows = 7450/icons_per_row;
 
   var height = Math.floor(number_of_rows * pixel_height_per_card);
   prisoners.style.height = height + "px";
 
   if (!mute) {
-    var thousand_height = Math.floor((1000/icons_per_row) * pixel_height_per_card);
+    var thousand_height = Math.floor((100/icons_per_row) * pixel_height_per_card);
     thousand.style.height = thousand_height + "px";
   }
 }

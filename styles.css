@@ -117,10 +117,24 @@ html.black-sparse  body {
   align-items: flex-start;
 }
 .infobox-inner {
-  font-size: 18px;
+  font-size: 28px;
+  text-align: center;
   top: 200px;
   padding: 10px;
   background-color: #002395;
+  box-shadow: -5px 5px 5px #505050;
+  max-width: 800px;
+  position: sticky;
+  z-index: 10;
+  display: inline-block;
+  color: white;
+}
+.infobox-inner3 {
+  font-size: 12px;
+  text-align: center;
+  top: 100px;
+  padding: 10px;
+  background-color: #302f2f;
   box-shadow: -5px 5px 5px #505050;
   max-width: 800px;
   position: sticky;
@@ -260,6 +274,7 @@ html.black-sparse  body {
   box-shadow: -2px 2px 5px black;
   box-sizing: border-box;
   font-size: 16px;
+  background-color: #FFB612;
 }
 .bar-inner {
   color: white;

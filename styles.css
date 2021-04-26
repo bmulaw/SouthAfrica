@@ -786,7 +786,7 @@ p:last-child {
   height: 108%;
   content: '';
   background-image: url(img/bubble_background.svg);
-  width: 105%;
+  width: 99%;
   position: absolute;
   left: -55px;
   top: -2px;

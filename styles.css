@@ -120,12 +120,13 @@ html.black-sparse  body {
   font-size: 18px;
   top: 200px;
   padding: 10px;
-  background-color: #57c8ff;
+  background-color: #002395;
   box-shadow: -5px 5px 5px #505050;
   max-width: 800px;
   position: sticky;
   z-index: 10;
   display: inline-block;
+  color: white;
 }
 .expandable .infobox-inner {
   height: 380px;
@@ -240,22 +241,22 @@ html.black-sparse  body {
   min-height: 70px;
 }
 .bar {
-  background-color: rgb(175, 206, 113);
+  background-color: #FFB612;
   margin: 10px 0;
   padding: 10px;
   color: white;
   box-shadow: -2px 2px 5px black;
   box-sizing: border-box;
-  font-size: 12px;
+  font-size: 16px;
 }
 .bar-inner {
-  color: black;
+  color: white;
   margin-left: calc(100% + 6px);
   white-space: nowrap;
   display: inline-block;
 }
 .bar.highlighted {
-  background-color: #a20000;
+  background-color: #DE3831;
 }
 .bar.highlighted .bar-inner {
   color: white;
@@ -907,8 +908,9 @@ blockquote strong {
   stroke: #921f4b;
 }
 .infobox-yellow .infobox-inner {
-  background-color: #ffd438;
+  background-color: #FFB612;
   box-shadow: none;
+  color: black;
 }
 #bubbles {
   transform-origin: 15% top;
@@ -1294,6 +1296,7 @@ blockquote strong {
     margin-left: 10px;
     padding-right: 10px;
     text-align: left;
+    color: white;
   }
   #curve-wrapper svg {
     max-width: 100%;

@@ -6,6 +6,7 @@ html, body {
   scroll-behavior: smooth;
   font-family: sans-serif;
   /* overflow-x: hidden; */
+  /* color: #229e71 */
 }
 .spacer {
   height: 1px;
@@ -61,7 +62,7 @@ h1 {
 }
 .prisoners {
   min-height: 200000px;
-  background-color: #229e71;
+  background-color: white;
 }
 .black .prisoners {
   background-image: url('img/bg/black.svg');
@@ -115,7 +116,7 @@ html.black-sparse  body {
 .infobox {
   font-family: sans-serif;
   margin-top: 10000px;
-  height: 5000px;
+  height: 4500px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -134,7 +135,7 @@ html.black-sparse  body {
   color: white;
 }
 .infobox-inner3 {
-  font-size: 12px;
+  font-size: 11.67px;
   text-align: center;
   top: 100px;
   padding: 10px;

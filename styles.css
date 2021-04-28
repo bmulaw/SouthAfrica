@@ -62,7 +62,7 @@ h1 {
 }
 .prisoners {
   min-height: 200000px;
-  background-color: white;
+  background-color: #229e71;
 }
 .black .prisoners {
   background-image: url('img/bg/black.svg');
